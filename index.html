@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap v5.1.3 CDNs -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Home Page</title>
+</head>
+
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+            <div class="container">
+                <a class="navbar-brand mr-4" href="index.html">Api Pagos</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link" href="#">Pagos</a>
+                        <a class="nav-item nav-link" href="#">Servicios</a>
+                    </div>
+                    <!-- Navbar Right Side -->
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Perfil</a>
+                        <a class="nav-item nav-link" role="button" id="logout">Logout</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-blue fw-bold fs-5 alert-success">Pagos Realizados</div>
+                    <div class="card-body">
+                        <!-- ITEMS DE PAGOS REALIZADOS -->
+                        <div class="card alert-success">
+                            <div class="card-body">
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <div class="servicio">
+                                        <img src="./static/img/user.png" alt="Profile" class="rounded-circle">
+                                        <span class="ms-2">Servicio</span>
+                                    </div>
+                                    <div class="">Fecha de Pago</div>
+                                    <div class="">Monto</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card alert-success">
+                            <div class="card-body">
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <div class="servicio">
+                                        <img src="./static/img/user.png" alt="Profile" class="rounded-circle">
+                                        <span class="ms-2">Servicio</span>
+                                    </div>
+                                    <div class="">Fecha de Pago</div>
+                                    <div class="">Monto</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END: ITEMS -->
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-section">
+                    <div class="card">
+                        <div class="card-header text-blue fw-bold fs-5 alert-danger">Pagos Vencidos</div>
+                        <div class="card-body">
+                            <!-- ITEMS DE PAGOS VENCIDOS -->
+                            <div class="card alert-danger">
+                                <div class="card-body">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div class="servicio">
+                                            <img src="./static/img/user.png" alt="Profile" class="rounded-circle">
+                                            <span class="ms-2">Servicio</span>
+                                        </div>
+                                        <div class="">Fecha de Pago</div>
+                                        <div class="">Monto</div>
+                                        <div class="">Penalidad</div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="card alert-danger">
+                                <div class="card-body">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div class="servicio">
+                                            <img src="./static/img/user.png" alt="Profile" class="rounded-circle">
+                                            <span class="ms-2">Servicio</span>
+                                        </div>
+                                        <div class="">Fecha de Pago</div>
+                                        <div class="">Monto</div>
+                                        <div class="">Penalidad</div>
+                                      </div>
+                                </div>
+                            </div>
+                            <!-- END: ITEMS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
