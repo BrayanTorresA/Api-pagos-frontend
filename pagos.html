@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap v5.1.3 CDNs -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Pagos</title>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+            <div class="container">
+                <a class="navbar-brand mr-4" href="index.html">Api Pagos</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link" href="pagos.html">Pagos</a>
+                        <a class="nav-item nav-link" href="#">Servicios</a>
+                    </div>
+                    <!-- Navbar Right Side -->
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Perfil</a>
+                        <a class="nav-item nav-link" role="button" id="logout">Logout</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- <div class="d-flex justify-content-center"> -->
+                    <div class="card">
+                        <div class="card-header text-blue fw-bold fs-5 alert-primary">Añadir NuevoPago</div>
+                        <div class="card-body">
+                            <form id="formPagos">
+
+                                <div class="row mb-3">
+                                    <label for="inputDate" class="col-sm-2 col-form-label">Fecha de
+                                        Vencimiento</label>
+                                    <div class="col-sm-10">
+                                        <input type="date" class="form-control" id="fecha">
+                                        <div id="msg" class="alert alert-danger d-none p-2 mt-2" role="alert">
+                                            Debe seleccionar una fecha correcta</div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label">Servicio</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-control" aria-label="Default select example" id="servicios">
+                                            <option selected value="-1">Seleccionar Servicio</option>
+                                        </select>
+                                        <div id="msg1" class="alert alert-danger d-none p-2 mt-2" role="alert">
+                                            Debe seleccionar un servicio</div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputNumber" class="col-sm-2 col-form-label">Monto</label>
+                                    <div class="col-sm-10">
+                                        <input value="" type="number" step="any" class="form-control" id="monto">
+                                        <div id="msg2" class="alert alert-danger d-none p-2 mt-2" role="alert">
+                                            Debe ingresar un monto</div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3 text-center">
+
+                                    <div class="col-sm-12">
+                                        <div class="d-grid col-3 mx-auto">
+                                            <button class="btn btn-primary" type="submit">Añadir</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
